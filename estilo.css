@@ -1,0 +1,790 @@
+
+@import url(<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gafata&display=swap" rel="stylesheet">);
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+
+    background-color: rgba(15, 0, 8, 0.89);
+    margin: 0px 20px;
+    overflow-x: hidden;
+    
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Fredericka the Great;
+}
+p,a,li{
+    font-family: Gafata;
+}
+.navbar{
+    background-color: rgba(15, 0, 8, 0.883);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    left: 0;
+    
+    
+}
+
+.logo{
+    width: 45px;
+}
+
+.logo:hover{
+    
+    transform: scale(1.1);
+    transition: all ease 1.5s;
+    cursor: pointer;
+    
+}
+
+
+.navbar-nav{
+    margin-top: 0px;
+}
+.navbar-nav li a{
+    color: #E4E3E3 !important;
+}
+
+.collapse{
+    justify-content: flex-end;
+}
+
+.nav-item:hover{
+    background-color: #17a8a1;
+}
+
+
+
+/*BANNER*/
+.d-block{
+    margin-top: 65px;
+}
+
+
+
+
+
+/*PERFIL*/
+
+
+#perfil .conteiner2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 0 20px;
+    background: #E4E3E3;
+    
+}
+
+#perfil .card-container{
+    display: flex;
+    width: 700px;
+    height: auto;
+    background: #17a8a1;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px 2px rgba(2, 2, 2, 0.3);
+
+}
+#perfil .header{
+    border-right: 1px solid #E4E3E3;
+}
+#perfil .descripcion{
+    background-image: url(../img/perfil2.png);
+    position: relative;
+}
+
+#perfil .descripcion p{
+    margin: 50px 30px;
+    color: #E4E3E3;
+    text-align: justify;
+    
+}
+
+#perfil .foto{
+    width: 250px;
+    height: 250px;
+    
+}
+#perfil .header .descripcion{
+    padding: 30px;
+    text-align: center;
+}
+#perfil .header a{
+    position: relative;
+    display: block;
+    background-image: url(../img/perfil.png);
+    
+}
+#perfil .header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(0,0,0, 0.6);
+    margin: 20px 30px;
+    transition: .2s;
+}
+#perfil .header a:hover img{
+    box-shadow: 0 0 0 7px rgba(0,0,0, 0.3);
+}
+
+#perfil .header h2{
+    color: #E4E3E3;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+h4{
+    
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px double #0f0008;
+    border-width: 7px 0;
+    font-size: 30px;
+    margin: 0px 70px;
+}
+
+h5{
+   
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px double #e4e3e3;
+    border-width: 7px 0;
+    font-size: 30px;
+    margin: 0px 70px;
+    
+
+}
+
+/*Habilidades*/
+
+#habilidades{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #0f0008;
+    padding-top: 30px;
+    color: #E4E3E3;
+}
+
+
+
+
+#habilidades .containerh{
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    margin: 0 auto;
+    
+}
+
+#habilidades .containerh .card2{
+    position: relative;
+    width: 200px;
+    background: linear-gradient(0deg,#fff,#e4e3e3,#e4e3e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 0 7px;
+}
+#habilidades .containerh .card2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+#habilidades .containerh .card2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 168, 161, 0.349);
+    pointer-events: none;
+    z-index: 1;
+}
+#habilidades .porcent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #fff;
+    background: #e4e3e3;
+    z-index: 70;
+}
+#habilidades .porcent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#habilidades .porcent .number h3{
+    color: #0f0008;
+    font-weight: 700;
+    font-size: 35px;
+    transition: 0.5s;
+}
+#habilidades .card2:hover .porcent .number h3{
+    color: #0f0008;
+    font-size: 45px;
+}
+#habilidades .porcent .number h3 span{
+    font-size: 24px;
+    color: #0f0008;
+}
+#habilidades .card:hover .porcent .number h3 span{
+    color: #0f0008;
+}
+#habilidades .text{
+    position: relative;
+    color: #17a8a1;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-top: 20px;
+    font-family: Gafata;
+
+}
+#habilidades .card:hover .text{
+    color: #0f0008;
+}
+#habilidades svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 70;
+}
+#habilidades svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+    margin:auto;
+    
+
+}
+
+#habilidades svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+#habilidades .card2:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke: #17a8a1;
+}
+
+#habilidades .card2:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 75)/100);
+    stroke: #17a8a1;
+}
+
+#habilidades .card2:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke: #17a8a1;
+}
+
+
+#habilidades .card2:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 65)/100);
+    stroke: #17a8a1;
+}
+
+#habilidades .card2:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke: #17a8a1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Portafolio*/
+
+#portafolio{
+    
+    padding: 30px 0;
+    background: #E4E3E3;
+    color: #0f0008;
+}
+
+
+
+
+#portafolio .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+    
+
+}
+
+#portafolio .galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+
+}
+
+#portafolio .galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+}
+
+#portafolio .galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+#portafolio .light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    
+}
+
+#portafolio .light-box img{
+    width: 70vw;
+    max-height: 70vh;
+}
+
+#portafolio .light-box:target{
+    transform: scale(1);
+}
+#portafolio .close{
+  display: block;
+  position: absolute;  
+  top: 40px;
+  right: 40px;
+  background: #17a8a1;
+  color: #E4E3E3;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+#portafolio .close:hover{
+    background: #0f0008;
+}
+
+#portafolio .next{
+    display: block;
+    background: #17a8a1;
+    color: #E4E3E3;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+   
+
+
+}
+#portafolio .next:hover{
+    background: #0f0008;
+}
+
+
+
+/*Hobbies*/
+
+#hobbies{
+    background: #0f0008;
+    color: #e4e3e3;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#hobbies .container5{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0;
+}
+
+#hobbies .container5 .card3{
+    position: relative;
+    max-width:230px;
+    height: 200px;
+    background: #17a8a1;
+    margin: 10px 7px;
+    padding: 10px 7px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0,5);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#hobbies .container5 .card3:hover{
+    height: 270px;
+  
+}
+
+#hobbies .container5 .card3 .imgBx{
+    position: relative;
+    width: 230px;
+    height: 230px;
+    top: -87px;
+    left: -7px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0,2);
+    
+    
+}
+
+#hobbies .container5 .card3 .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#hobbies .container5 .card3 .content{
+    position: relative;
+    margin-top: -20px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #e4e3e3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#hobbies .container5 .card3:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -5;
+    transition-delay: 0.3s;
+}
+
+
+
+
+
+
+
+/*Footer*/
+
+
+
+footer{
+    width: 100%;
+    background: #e4e3e3;
+    color: #0f0008;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+} 
+
+.column1{
+    max-width: 400px;
+}
+
+
+
+.column1 img{
+    width: 250px;
+    margin-top: 0px;
+
+}
+
+.column2{
+    max-width: 400px;
+    
+}
+
+.column2 h1{
+    font-size: 22px;
+}
+
+.column2 .row{
+    margin-top: 20px;
+    display: flex;
+}
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.column2 a{
+    color: #0f0008;
+    text-decoration: none;
+}
+.column3{
+    max-width: 400px;
+}
+
+.column3 h1{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.column3 a{
+    color: #0f0008;
+    text-decoration: none;
+}
+
+.container-footer{
+    width: 100%;
+    background: #17a8a1;
+    
+
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+
+}
+
+.copyright{
+    color: #e4e3e3;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE TABLET*/
+
+
+@media screen and (max-width:1024px) and (min-width: 757px){
+    /*PERFIL*/
+    #perfil .conteiner2{
+       
+        height: 45vh;  
+    }
+    #habilidades{
+        min-height: 40vh;
+    }
+    
+    
+}
+
+    
+
+
+@media screen and (max-width:1024px) and (min-width: 200px){
+
+    
+     
+    /*HABILIDADES*/
+
+    #habilidades .containerh{
+        flex-wrap: wrap;
+    }
+
+    #habilidades .containerh .card2{
+        margin: 10px 8px;
+    }
+    #portafolio .contenedor .caja{
+        
+        height: 150px;
+    }
+
+     /*Hobbies*/
+     #hobbies .container5{
+        flex-wrap: wrap;
+    }
+    #hobbies .container5{
+        padding-top: 35px;
+    }
+    #hobbies .container5 .card3 {
+
+        margin-top: 100px;
+        
+    }
+
+    /*Footer*/
+    #contacto .container-body{
+        flex-wrap: wrap;
+     }
+     
+     #contacto .column1 img{
+          justify-content: center;
+ 
+     }
+     
+     #contacto .column2, .column3{
+         margin-top: 40px;
+     }
+}
+
+
+
+
+
+
+/*RESPONSIVE MOVIL*/
+
+@media screen and (max-width:640px) and (min-width: 200px){
+
+    /*TITULOS*/
+    
+    
+    /*PERFIL*/
+
+    .navbar-toggler{
+        margin: 0px 50px;
+    }
+
+    #perfil .conteiner2{
+       
+        height: 130vh;  
+    }
+
+    #perfil .card-container{
+        display: block;
+        width: 350px;
+        
+    }
+    #perfil .header{
+        padding: 20px 0px 5px 0px;
+        border: none;
+        background: #0f0008;
+    }
+    #perfil .descripcion{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+    #perfil .header a{
+        background: #0f0008;
+    }
+   
+   
+
+  
+
+    /*Portafolio*/
+
+    #portafolio ul{
+        margin: 40px 20px;
+        
+    }
+
+    #portafolio ul li{
+        margin-right: 7px;
+    }
+    #portafolio .contenedor .caja{
+        width: 45%;
+        height: 85px;
+    }
+
+    
+  
+}
+
+
+
+@media screen and (max-width:350px) and (min-width: 100px){
+   
+    
+    #perfil .foto{
+        width: 150px;
+        height: 150px;
+    
+    }
+    #perfil .conteiner2{
+       
+        height: 150vh;  
+    }
+    #perfil .descripcion p{
+        font-size: 15px;
+    }
+    #perfil .header h2{
+        font-size: 15px;
+    }
+
+}

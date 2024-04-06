@@ -1,4 +1,3 @@
-
 @import url(<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gafata&display=swap" rel="stylesheet">);
 
 
@@ -7,20 +6,20 @@ html{
 }
 body{
 
-    background-color: rgba(15, 0, 8, 0.89);
+    background-color: rgba(0, 0, 0, 0.925);
     margin: 0px 20px;
     overflow-x: hidden;
     
     
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: Fredericka the Great;
+    font-family: Century Gothic;
 }
 p,a,li{
-    font-family: Gafata;
+    font-family: Brown Thin;
 }
 .navbar{
-    background-color: rgba(15, 0, 8, 0.883);
+    background-color: rgba(0, 0, 0, 0.836);
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -56,7 +55,7 @@ p,a,li{
 }
 
 .nav-item:hover{
-    background-color: #17a8a1;
+    background-color: #2b8573;
 }
 
 
@@ -79,7 +78,7 @@ p,a,li{
     justify-content: center;
     height: 90vh;
     padding: 0 20px;
-    background: #E4E3E3;
+    background: #000000;
     
 }
 
@@ -89,11 +88,11 @@ p,a,li{
     height: auto;
     background: #17a8a1;
     border-radius: 3px;
-    box-shadow: 1px 1px 4px 2px rgba(2, 2, 2, 0.3);
+    box-shadow: 1px 1px 4px 2px rgba(255, 255, 255, 0.178);
 
 }
 #perfil .header{
-    border-right: 1px solid #E4E3E3;
+    border-right: 1px solid #000000;
 }
 #perfil .descripcion{
     background-image: url(../img/perfil2.png);
@@ -102,7 +101,7 @@ p,a,li{
 
 #perfil .descripcion p{
     margin: 50px 30px;
-    color: #E4E3E3;
+    color: #ffffff;
     text-align: justify;
     
 }
@@ -124,16 +123,16 @@ p,a,li{
 }
 #perfil .header img{
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(0,0,0, 0.6);
+    box-shadow: 0 0 0 3px rgb(17, 184, 161);
     margin: 20px 30px;
     transition: .2s;
 }
 #perfil .header a:hover img{
-    box-shadow: 0 0 0 7px rgba(0,0,0, 0.3);
+    box-shadow: 0 0 0 7px rgb(17, 184, 161);
 }
 
 #perfil .header h2{
-    color: #E4E3E3;
+    color: #000000;
     text-align: center;
     font-size: 30px;
 }
@@ -147,7 +146,7 @@ h4{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 3px double #0f0008;
+    border: 3px double #000000;
     border-width: 7px 0;
     font-size: 30px;
     margin: 0px 70px;
@@ -158,7 +157,7 @@ h5{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 3px double #e4e3e3;
+    border: 3px double #000000;
     border-width: 7px 0;
     font-size: 30px;
     margin: 0px 70px;
@@ -173,9 +172,9 @@ h5{
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    background: #0f0008;
+    background: #000000;
     padding-top: 30px;
-    color: #E4E3E3;
+    color: #ffffff;
 }
 
 
@@ -270,7 +269,7 @@ h5{
 
 }
 #habilidades .card:hover .text{
-    color: #0f0008;
+    color: #e2dfe1;
 }
 #habilidades svg{
     position: relative;
@@ -297,30 +296,32 @@ h5{
 }
 
 #habilidades .card2:nth-child(1) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke-dashoffset: calc(440 - (440 * 85)/100);
     stroke: #17a8a1;
 }
 
 #habilidades .card2:nth-child(2) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 75)/100);
+    stroke-dashoffset: calc(440 - (440 * 80)/100);
     stroke: #17a8a1;
 }
 
 #habilidades .card2:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke-dashoffset: calc(440 - (440 * 70)/100);
     stroke: #17a8a1;
 }
 
 
 #habilidades .card2:nth-child(4) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 65)/100);
+    stroke-dashoffset: calc(440 - (440 * 70)/100);
     stroke: #17a8a1;
 }
 
 #habilidades .card2:nth-child(5) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke-dashoffset: calc(440 - (440 * 60)/100);
     stroke: #17a8a1;
 }
+
+
 
 
 
@@ -340,8 +341,8 @@ h5{
 #portafolio{
     
     padding: 30px 0;
-    background: #E4E3E3;
-    color: #0f0008;
+    background: #000000;
+    color: #ffffff;
 }
 
 
@@ -372,7 +373,7 @@ h5{
     display: block;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 4px rgb(44, 44, 44);
 
 }
 
@@ -420,7 +421,7 @@ h5{
   border-radius: 50%;
 }
 #portafolio .close:hover{
-    background: #0f0008;
+    background: #000000;
 }
 
 #portafolio .next{
@@ -437,7 +438,7 @@ h5{
 
 }
 #portafolio .next:hover{
-    background: #0f0008;
+    background: #000000;
 }
 
 
@@ -445,7 +446,7 @@ h5{
 /*Hobbies*/
 
 #hobbies{
-    background: #0f0008;
+    background: #000000;
     color: #e4e3e3;
     padding-top: 30px;
     justify-content: center;
@@ -535,20 +536,20 @@ footer{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .container-footer-all{
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
 }
 
 .container-body{
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 30px;
 } 
 
 .column1{
